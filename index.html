@@ -9,28 +9,30 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <a href="#"><img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»"></a>
-      <ul class="central_navigation">
-        <li>
-          <a class="navigation_link" href="#">Каталог</a>
+      <a><img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»"></a>
+      <ul class="navigation_central">
+        <li class="navigation_item">
+          <a class="navigation_link" href="/enter.html">Каталог</a>
         </li>
-        <li>
-          <a class="navigation_link" href="#">Доставка и оплата</a>
+        <li class="navigation_item">
+          <a class="navigation_link" href="/enter.html">Доставка и оплата</a>
         </li>
-        <li>
-          <a class="navigation_link" href="#">О Компании</a>
+        <li class="navigation_item">
+          <a class="navigation_link" href="/enter.html">О Компании</a>
         </li>
       </ul>
-      <ul class="interactive_navigation">
-        <li>
-          <a href="#" class="navigation_button"><img src="img/loupe.svg" width="17" height="17"
-              alt="Логотип Поиска"></a>
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="/enter.html" class="nav_button" title="Поиск"><img src="img/loupe.svg" width="17" height="17"
+              alt="Логотип Поиска">Поиск</a>
         </li>
-        <li>
-          <a href="#" class="navigation_button"><img src="img/entrance.svg" width="21" height="19" alt="Вход">Вход</a>
+        <li class="nav_item">
+          <a href="/enter.html" class="nav_button" title="Вход"><img src="img/entrance.svg" width="21" height="19"
+              alt="Вход">Вход</a>
         </li>
-        <li>
-          <a href="#" class="navigation_button"><img src="img/basket.svg" width="21" height="20" alt="Корзина">Пусто</a>
+        <li class="nav_item">
+          <a href="/enter.html" class="nav_button" title="Корзина"><img src="img/basket.svg" width="21" height="20"
+              alt="Корзина">Пусто</a>
         </li>
       </ul>
       <p class="working_time">С 10 до 20, ежедневно</p>
@@ -44,14 +46,14 @@
       <h3 class="about_shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
         производства на развес</h3>
       <ul class="benefits_list">
-        <li>
+        <li class="benefits_item">
           <img class="benefits_logo" src="img/ice-cream.svg" width="49" height="49" alt="Логотип преимущества">
           <p class="benefits_text">Все наше мороженое изготавливается на собственном производстве, с использованием
             современного
             оборудования и проверенных
             временем технологий.</p>
         </li>
-        <li>
+        <li class="benefits_item">
           <img class="benefits_logo" src="img/eco.svg" width="49" height="49" alt="Логотип преимущества">
           <p class="benefits_text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
             качества.
@@ -59,14 +61,14 @@
             дополнительные ингредиенты
             и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
-        <li>
+        <li class="benefits_item">
           <img class="benefits_logo" src="img/cow.svg" width="49" height="49" alt="Логотип преимущества">
           <p class="benefits_text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
             компаний, с которыми
             нас связывает
             долговременное сотрудничество.</p>
         </li>
-        <li>
+        <li class="benefits_item">
           <img class="benefits_logo" src="img/thermometer.svg" width="49" height="49" alt="Логотип преимущества">
           <p class="benefits_text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
             который не дает
@@ -76,15 +78,16 @@
       </ul>
     </section>
     <article class="article">
-      <img class="background_block" src="img/background.jpg" width="560" height="220" alt="Фон">
-      <h3 class="news_heading">Новое в нашем блоге</h3>
-      <a class="news_info" href="#">10 способов сервировки
+      <img class="article_background" src="img/background.jpg" width="560" height="220" alt="Фон">
+      <h3 class="article_heading">Новое в нашем блоге</h3>
+      <a class="article_link" href="/enter.html">10 способов сервировки
         фруктовых щербетов к
         столу</a>
     </article>
     <article class="article">
-      <img class="background_block" src="img/bg-post.svg" width="560" height="220" alt="Фон">
-      <p class="mail_info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+      <img class="article_background" src="img/bg-post.svg" width="560" height="220" alt="Фон">
+      <p class="article_info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+        что у нас
         происходит. Обещаем не
         спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <!-- Здесь будет форма  -->
@@ -93,44 +96,46 @@
     </article>
   </main>
   <footer class="footer">
-    <section class="social_list">
-      <h2>Наши социальные сети</h2>
-      <ul class="social_link">
-        <li>
-          <a class="social_item" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a>
+    <section class="social">
+      <ul class="social_list">
+        <li class="social_item">
+          <a class="social_link" href="/enter.html"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a>
         </li>
-        <li>
-          <a class="social_item" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
+        <li class="social_item">
+          <a class="social_link" href="/enter.html"><img src="img/instagram.svg" width="32" height="32"
+              alt="Инстаграм"></a>
         </li>
-        <li>
-          <a class="social_item" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a>
+        <li class="social_item">
+          <a class="social_link" href="/enter.html"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a>
         </li>
-        <li>
-          <a class="social_item" href="#"><img src="img/instagram.svg" width="32" height="32" alt="ВКонтакте"></a>
+        <li class="social_item">
+          <a class="social_link" href="/enter.html"><img src="img/vk.svg" width="32" height="32" alt="ВКонтакте"></a>
         </li>
       </ul>
     </section>
 
-    <ul class="additional_information">
-      <li>
-        <a class="additional_items" href="#"><img src="img/heart.svg" width="15" height="13" alt="иконка">Для
+    <ul class="items">
+      <li class="item">
+        <a class="link" href="/enter.html"><img src="img/heart.svg" width="15" height="13" alt="иконка">Для
           поставщиков</a>
       </li>
-      <li>
-        <a class="additional_items" href="#">О производстве</a>
+      <li class="item">
+        <a class="link" href="/enter.html">О производстве</a>
       </li>
-      <li>
-        <a class="additional_items" href="#">Наши документы</a>
+      <li class="item">
+        <a class="link" href="/enter.html">Наши документы</a>
       </li>
-      <li>
-        <a class="additional_items" href="#">Экологические стандарты</a>
+      <li class="item">
+        <a class="link" href="/enter.html">Экологические стандарты</a>
       </li>
     </ul>
 
     <section class="developer_info">
       <h2>Кем разработана</h2>
       <img class="developer_logo" src="img/logo-htmlacademy.svg" width="112" height="38" alt="Html Academy">
-      <span class="developer_about">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©
+      <span class="developer_about">Сделано в <a class="developer_link"
+          href="https://htmlacademy.ru/intensive/htmlcss">HTML
+          Academy</a> ©
         2019</span>
     </section>
   </footer>
