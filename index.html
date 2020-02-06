@@ -39,32 +39,32 @@
         </li>
       </ul>
       <ul class="navigation_list">
-        <li class="nav_item">
+        <li class="navigation_action">
           <a href="search.html" class="nav_button" title="Поиск"><img src="img/loupe.svg" width="17" height="17"
-              alt="Логотип Поиска"><span class="visible_hidden">Поиск</span></a>
+              alt="Логотип Поиска"><span class="visually-hidden">Поиск</span></a>
           <ul class="search_form">
             <li>
-              <h2 class="visible_hidden">Поиск</h2>
+              <h2 class="visually-hidden">Поиск</h2>
               <form name="search" method="post" action="https://server.htmlacademy.ru/">
                 <input type="search" name="search_text" placeholder="Что ищем?" aria-label="Поиск по сайту">
               </form>
             </li>
           </ul>
         </li>
-        <li class="nav_item">
+        <li class="navigation_action">
           <a href="login.html" class="nav_button" title="Вход"><img src="img/entrance.svg" width="21" height="19"
               alt="Вход">Вход</a>
           <ul class="login_form">
             <li>
-              <h2 class="visible_hidden">Личный кабинет</h2>
+              <h2 class="visually-hidden">Личный кабинет</h2>
               <form method="post" action="https://server.htmlacademy.ru/">
                 <p class="login_unit">
-                  <label for="login_mail" class="visible_hidden">Электронная почта</label>
-                  <input type="mail" name="login_mail" placeholder="Электронная почта">
+                  <label for="login_mail" class="visually-hidden">Электронная почта</label>
+                  <input type="mail" name="login_mail" id="login_mail" placeholder="Электронная почта">
                 </p>
                 <p class="login_unit">
-                  <label for="login_password" class="visible_hidden">Пароль</label>
-                  <input type="password" name="login_password" placeholder="Пароль">
+                  <label for="login_password" class="visually-hidden">Пароль</label>
+                  <input type="password" name="login_password" id="login_password" placeholder="Пароль">
                 </p>
                 <p class="login_links">
                   <a href="forgot.html" class="login_link">Забыли пароль?</a>
@@ -75,21 +75,21 @@
             </li>
           </ul>
         </li>
-        <li class="nav_item">
+        <li class="navigation_action">
           <a href="basket.html" class="nav_button" title="Корзина"><img src="img/basket.svg" width="21" height="20"
               alt="Корзина">Пусто</a>
         </li>
       </ul>
   </header>
   <main class="main">
-    <section class="castomer_information">
-      <h2 class="visible_hidden">Информация для клиента</h2>
+    <section class="customer_information">
+      <h2 class="visually-hidden">Информация для клиента</h2>
       <p class="working_time">С 10 до 20, ежедневно</p>
       <p class="phone_number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
     </section>
     <!-- Место для разметки в другой раз -->
     <section class="store_information">
-      <h2 class="visible_hidden">Преимущества магазина</h2>
+      <h2 class="visually-hidden">Преимущества магазина</h2>
       <img src="img/wafer.jpg" width="1146" height="306" alt="Фон блока">
       <h3 class="about_shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
         производства на развес</h3>
@@ -126,7 +126,7 @@
       </ul>
     </section>
     <article class="article">
-      <h2 class="visible_hidden">Новости в блоге</h2>
+      <h2 class="visually-hidden">Новости в блоге</h2>
       <img class="article_background" src="img/background.jpg" width="560" height="220" alt="Фон">
       <h3 class="article_heading">Новое в нашем блоге</h3>
       <a class="article_link" href="tenways.html">10 способов сервировки
@@ -134,38 +134,38 @@
         столу</a>
     </article>
     <article class="article">
-      <h2 class="visible_hidden">Подписка на рассылку</h2>
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
       <img class="article_background" src="img/bg-post.svg" width="560" height="220" alt="Фон">
       <p class="article_info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
         что у нас
         происходит. Обещаем не
         спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subscribe" name="subscribe" method="post" action="#">
-        <label for="subscribe_mail" class="visible_hidden">Электронная почта</label>
-        <input type="mail" name="subscribe_email" placeholder="Электронная почта">
+        <label for="subscribe_mail" class="visually-hidden">Электронная почта</label>
+        <input type="mail" name="subscribe_email" id="subscribe_mail" placeholder="Электронная почта">
         <button type="submit" class="subscribe_button" name="subscribe_submit">Отправить</button>
       </form>
     </article>
   </main>
   <footer class="footer">
     <section class="social">
-      <h2 class="visible_hidden">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social_list">
         <li class="social_item">
-          <a class="social_link" href="https://twitter.com/gllacy_official"><img src="img/twitter.svg" width="32"
-              height="32" alt="Твиттер"></a>
+          <a class="social_link" href="https://twitter.com/gllacy_official" target="_blank"><img src="img/twitter.svg"
+              width="32" height="32" alt="Твиттер"></a>
         </li>
         <li class="social_item">
-          <a class="social_link" href="https://www.instagram.com/gllacy_official/"><img src="img/instagram.svg"
-              width="32" height="32" alt="Инстаграм"></a>
+          <a class="social_link" href="https://www.instagram.com/gllacy_official" target="_blank"><img
+              src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
         </li>
         <li class="social_item">
-          <a class="social_link" href="https://www.facebook.com/gllacy_official"><img src="img/fb.svg" width="32"
-              height="32" alt="Фейсбук"></a>
+          <a class="social_link" href="https://www.facebook.com/gllacy_official" target="_blank"><img src="img/fb.svg"
+              width="32" height="32" alt="Фейсбук"></a>
         </li>
         <li class="social_item">
-          <a class="social_link" href="https://vk.com/gllacy_official"><img src="img/vk.svg" width="32" height="32"
-              alt="ВКонтакте"></a>
+          <a class="social_link" href="https://vk.com/gllacy_official" target="_blank"><img src="img/vk.svg" width="32"
+              height="32" alt="ВКонтакте"></a>
         </li>
       </ul>
     </section>
@@ -187,7 +187,7 @@
     </ul>
 
     <section class="developer_info">
-      <h2 class="visible_hidden">Кем разработана</h2>
+      <h2 class="visually-hidden">Кем разработана</h2>
       <img class="developer_logo" src="img/logo-htmlacademy.svg" width="112" height="38" alt="Html Academy">
       <span class="developer_about">Сделано в <a class="developer_link"
           href="https://htmlacademy.ru/intensive/htmlcss">HTML
@@ -195,22 +195,22 @@
         2019</span>
     </section>
   </footer>
-  <section class="feed_back">
-    <h2 class="visible_hidden">Обратная связь</h2>
+  <section class="feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
     <h2>Мы обязательно вам ответим!</h2>
-    <form class="feed_back_form" method="post" name="feed_back" action="https://server.htmlacademy.ru/">
-      <p class="feed_back_unit">
-        <label for="feed_back_name" class="visible_hidden">Как вас зовут?</label>
-        <input type="text" name="feed_back_name" placeholder="Как вас зовут?">
+    <form class="feedback_form" method="post" name="feedback" action="https://server.htmlacademy.ru/">
+      <p class="feedback_unit">
+        <label for="feedback_name" class="visually-hidden">Как вас зовут?</label>
+        <input type="text" name="feedback_name" id="feedback_name" placeholder="Как вас зовут?">
       </p>
-      <p class="feed_back_unit">
-        <label for="feed_back_mail" class="visible_hidden">Ваша почта для ответа?</label>
-        <input type="text" name="feed_back_mail" placeholder="Ваша почта для ответа?">
+      <p class="feedback_unit">
+        <label for="feedback_mail" class="visually-hidden">Ваша почта для ответа?</label>
+        <input type="text" name="feedback_mail" id="feedback_mail" placeholder="Ваша почта для ответа?">
       </p>
-      <textarea name="feed_back_comment" cols="50" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="feed_back_close" type="button">Отправить</button>
+      <textarea name="feedback_comment" cols="50" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="feedback_close" type="button">Отправить</button>
     </form>
-    <button class="feed_back_send" type="button">Закрыть</button>
+    <button class="feedback_send" type="button">Закрыть</button>
   </section>
 
 </body>
