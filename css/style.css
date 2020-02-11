@@ -20,7 +20,14 @@ li {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
 }
 
 .internal_navigation,
@@ -31,10 +38,71 @@ li {
   display: none;
 }
 
+.header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  padding-top: 9px;
+}
+
+.navigation_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.navigation_central {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 385px;
+}
+
+.navigation_item {
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.navigation_item > a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.navigation_list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 26px;
+}
+
+.navigation_action {
+  margin-bottom: 3px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.logo {
+  margin-right: 10px;
+  margin-left: 27px;
+  margin-bottom: 2px;
+  width: 180px;
+}
+
+.navigation_heading {
+  border-bottom: 1px solid #9db1a5;
+}
+
 .navigation_link {
   font-weight: bold;
   line-height: 18px;
-  border-bottom: 1px solid #9db1a5;
 }
 
 .navigation_link:hover {
@@ -80,11 +148,33 @@ li {
 }
 
 /* Main */
+.main {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.customer_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.customer_information {
+  width: 215px;
+  height: 100%;
+  margin-right: -25px;
+  text-align: center;
+}
+
 .working_time {
   font-size: 14px;
   color: #fff;
   font-weight: bold;
   line-height: 16px;
+  margin-bottom: 6px;
+  margin-top: 0px;
 }
 
 .phone_number {
@@ -93,6 +183,7 @@ li {
   color: #fff;
   font-weight: bold;
   line-height: 24px;
+  margin: 0;
 }
 
 .about_shop {
@@ -129,12 +220,64 @@ li {
   background-color: #e84d37;
 }
 
-/*_________*/
+.store_information {
+  background-image: url(../img/wafer.jpg);
+  margin: 0px;
+  padding: 24px 20px;
+  border-radius: 15px;
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: auto;
+}
 
-/* footer */
-.additional_link,
-.developer_link {
-  border-bottom: 1px solid #9db1a5;
+.about_shop {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.benefits_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefits_item {
+  width: 50%;
+  margin-bottom: 2px;
+}
+
+.article_info {
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 56px;
+  padding-right: 10px;
+}
+
+.article_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 40px 0px;
+  height: 220px;
+}
+.article_news,
+.article_subcribe {
+  width: 560px;
+  border-radius: 15px;
+  padding-bottom: 22px;
+}
+.article_news {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-right: auto;
+}
+.article_heading {
 }
 
 /*_________*/
