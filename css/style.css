@@ -20,7 +20,14 @@ li {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
 }
 
 .internal_navigation,
@@ -31,10 +38,71 @@ li {
   display: none;
 }
 
+.header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  padding-top: 9px;
+}
+
+.navigation_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.navigation_central {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 385px;
+}
+
+.navigation_item {
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.navigation_item > a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.navigation_list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 26px;
+}
+
+.navigation_action {
+  margin-bottom: 3px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.logo {
+  margin-right: 10px;
+  margin-left: 27px;
+  margin-bottom: 2px;
+  width: 180px;
+}
+
+.navigation_heading {
+  border-bottom: 1px solid #9db1a5;
+}
+
 .navigation_link {
   font-weight: bold;
   line-height: 18px;
-  border-bottom: 1px solid #9db1a5;
 }
 
 .navigation_link:hover {
@@ -43,21 +111,26 @@ li {
 }
 
 .website_link {
-  font-size: 14px;
-  color: #fff;
-  line-height: 16px;
   border-bottom: 1px solid #9db1a5;
 }
 
 .website_link:hover {
   border: none;
 }
-
+.website_item {
+  padding-right: 7px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
 .page_section_name {
   font-size: 35px;
   color: #fff;
   font-weight: bold;
   line-height: 41px;
+  padding: 0;
+  margin-top: 2px;
+  margin-bottom: 25px;
 }
 
 .product_price {
@@ -80,11 +153,36 @@ li {
 }
 
 /* Main */
+.main {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.container_customer {
+  display: flex;
+  justify-content: flex-end;
+}
+.container_navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.customer_information {
+  width: 215px;
+  height: 100%;
+  margin-right: -25px;
+  text-align: center;
+}
+
 .working_time {
   font-size: 14px;
   color: #fff;
   font-weight: bold;
   line-height: 16px;
+  margin-bottom: 6px;
+  margin-top: 0px;
 }
 
 .phone_number {
@@ -93,6 +191,7 @@ li {
   color: #fff;
   font-weight: bold;
   line-height: 24px;
+  margin: 0;
 }
 
 .about_shop {
@@ -117,6 +216,10 @@ li {
   color: #323232;
   font-weight: bold;
   text-decoration: underline;
+  display: block;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 4px;
 }
 
 .article_info {
@@ -126,15 +229,188 @@ li {
 
 .subscribe_button {
   color: #fff;
+  line-height: 24px;
+  font-size: 18px;
+  border-radius: 30px;
   background-color: #e84d37;
+  margin-left: 7px;
+  margin-top: -1px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.store_information {
+  background-image: url(../img/wafer.jpg);
+  margin: 0px;
+  padding: 24px 20px;
+  border-radius: 15px;
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.about_shop {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.benefits_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefits_item {
+  width: 50%;
+  margin-bottom: 2px;
+}
+
+.article_info {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 509px;
+}
+
+.article_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 40px 0px;
+  height: 220px;
+}
+.article_news,
+.article_subcribe {
+  width: 560px;
+  border-radius: 15px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+}
+.article_news {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-right: auto;
+}
+.article_heading {
+  margin: 0;
+  margin-top: 23px;
+  margin-left: 20px;
+}
+.article_subcribe {
+  background-color: #f8f7f4;
+  border: 5px solid #f26843;
+  border-image: url("../img/bg-post.svg") 5 round round;
+}
+.subscribe {
+  margin-left: 21px;
+  padding-top: 5px;
+}
+.subscribe > input {
+  width: 339px;
+  padding: 10px 13px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  color: #323232;
+  background-color: #ffffff;
+}
+.website_navigation {
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+  display: flex;
+}
+.product_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.product_card {
+  display: flex;
+  flex-direction: column;
+  width: 267px;
 }
 
 /*_________*/
 
 /* footer */
-.additional_link,
+.footer {
+  width: 1146px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social {
+  width: 185px;
+}
+.social_list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.additional {
+  display: flex;
+  width: 345px;
+  margin-top: -10px;
+  font-size: 13px;
+  line-height: 18px;
+}
+.additional_link {
+  border-bottom: 1px solid #9db1a5;
+}
+.additional_left {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 23px;
+  margin-right: 31px;
+}
+.additional_right {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.additional_left li:first-of-type {
+  margin-top: 8px;
+}
+.additional_left li:last-of-type {
+  padding-top: 4px;
+  padding-left: 15px;
+}
+.additional_right li:first-of-type {
+  margin-top: 8px;
+}
+.additional_right li:last-of-type {
+  padding-top: 4px;
+}
+.developer_info {
+  width: 215px;
+  margin-top: -10px;
+  margin-right: -27px;
+}
+.developer_about {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
 .developer_link {
   border-bottom: 1px solid #9db1a5;
 }
-
-/*_________*/
